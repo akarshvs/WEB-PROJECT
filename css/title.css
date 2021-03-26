@@ -1,0 +1,72 @@
+.main-tile
+{
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+
+
+}
+
+
+
+.ml4 {
+    position: absolute;
+    font-weight: 300;
+    font-size: 1.7em;
+    z-index: 500;
+    top: 47.5%;
+    left: 44.5%;
+    color: rgb(236, 227, 227);
+    
+    
+  }
+
+  .ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
+    
+  }
+
+  /* main  */
+
+  .ml12 {
+    font-weight: 500;
+    font-size: 3.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    z-index: 500;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    font-family: Josefin Sans, serif;
+    color: rgb(252, 243, 243);
+    
+  }
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  @media screen and (max-width: 992px)
+{
+    .ml12 {
+        font-size: 1.2em;
+        letter-spacing: 0.4em;
+    }
+
+    .ml4 {
+        position: absolute;
+        font-weight: 100;
+        font-size: 1em;
+        z-index: 500;
+        display: flex;
+        top: 43%;
+        left: 42%;
+      }
+}

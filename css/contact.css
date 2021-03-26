@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.contact{
+    background-image: linear-gradient(283deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 30%,rgba(130, 130, 130,0.04) 30%, rgba(130, 130, 130,0.04) 49%,rgba(31, 31, 31,0.04) 49%, rgba(31, 31, 31,0.04) 100%),linear-gradient(297deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 20%,rgba(130, 130, 130,0.04) 20%, rgba(130, 130, 130,0.04) 60%,rgba(31, 31, 31,0.04) 60%, rgba(31, 31, 31,0.04) 100%),linear-gradient(242deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 29%,rgba(130, 130, 130,0.04) 29%, rgba(130, 130, 130,0.04) 48%,rgba(31, 31, 31,0.04) 48%, rgba(31, 31, 31,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+}
+
+.contact h3
+{
+    margin-top: 60px;
+}
+
+
+.contact h3,
+.contact p
+{
+    color: #fff;
+}
+
+.sec .content
+{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.contact p
+{
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 250;
+}
+
+.contactForm{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contactForm form{
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.contactForm .row100
+{
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: space-between;
+}
+
+.contactForm .row100 .inputBx50
+{
+    width: 50%;
+    position: relative;
+    height: 50px;
+    margin: 0px 20px;
+    
+    overflow: hidden;
+}
+.contactForm .row100 .inputBx50 input{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding-top: 20px;
+    
+
+}
+
+.contactForm .row100 .inputBx50 label
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    text-align: left;
+    color: white;
+    border-bottom: 1px solid #fff;
+    
+}
+
+.contactForm .row100 .inputBx50 label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #ff0062;
+    left: 0px;
+    bottom: -1px;
+    text-align: left;
+    transform: translateX(-100%);  
+    transition: transform 0.3s ease;
+}
+
+
+
+.content-name
+{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+.contactForm 
+{
+    opacity: 0;
+    transform: translate scale(0.8);
+    transition: all 1s ease;
+
+}
+.contactForm[data-scroll="in"] 
+{
+    opacity: 1;
+    transition-delay: 0.3s;
+    transform: translate scale(1);
+}
+
+
+.contactForm .row100 .inputBx50 input:focus + .label-name .content-name,
+.contactForm .row100 .inputBx50 input:valid + .label-name .content-name
+{
+    transform: translateY(-120%);
+    color: #ff0062;
+    font-size: 14px;
+}
+
+.contactForm .row100 .inputBx50 input:focus + .label-name::after,
+.contactForm .row100 .inputBx50 input:valid + .label-name::after
+{
+    transform: translateX(0%);
+}
+
+
+.contactForm .row100 .inputBx100{
+
+    width: 100%;
+    height: 100px;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+.contactForm .row100 .inputBx100 textarea
+{
+    width: 100%;
+    height: 100px;
+    color: #595f6e;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding-top: 75px;;
+    resize: none;
+   
+}
+
+.contactForm .row100 .inputBx100 label
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    text-align: left;
+    color: white;
+    border-bottom: 1px solid #fff;
+    
+}
+
+.contactForm .row100 .inputBx100 label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid#ff0062;
+    left: 0px;
+    bottom: -1px;
+    text-align: left;
+    transform: translateX(-100%);  
+    transition: transform 0.5s ease;
+}
+
+.contactForm .row100 .inputBx100 textarea:focus + .label-name .content-name,
+.contactForm .row100 .inputBx100 textarea:valid + .label-name .content-name
+{
+    transform: translateY(-350%);
+    color: #ff0062;
+    font-size: 14px;
+}
+
+.contactForm .row100 .inputBx100 textarea:focus + .label-name::after,
+.contactForm .row100 .inputBx100 textarea:valid + .label-name::after
+{
+    transform: translateX(0%);
+}
+
+
+
+
+.contactForm .row100 button[type="submit"]
+{
+    background: none;
+    position: relative;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ff0062;
+    font-size: 17px;
+    border-radius: 4px;
+    transition: 0.9s;
+    overflow: hidden;
+    
+}
+
+.contactForm .row100 button[type="submit"]:focus
+{
+    outline: none;
+}
+
+.contactForm .row100 button[type="submit"]:before
+{
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255,255,255,0.5);
+  width: 30px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  filter: blur(30px);
+  transform: translateX(-130px) skewX(-15deg);
+  
+
+}
+
+.contactForm .row100 button[type="submit"]:after
+{
+    content: "";
+    position: absolute;
+    background: rgba(255,255,255,0.2);
+    width: 15px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+    
+  
+}
+
+.contactForm .row100 button[type="submit"]:hover
+{
+    background: linear-gradient(-45deg,#ff0062 ,#f70707);
+   
+}
+
+.contactForm .row100 button[type="submit"]:hover:before
+{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 0.6;
+    transition: 1s;
+    
+}
+
+.contactForm .row100 button[type="submit"]:hover:after
+{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: 1s;
+   
+}
+
+
+
+.sci{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.sci ul{
+    display: flex;
+}
+.sci ul li{
+
+    list-style: none;
+    opacity: 0;
+    transition: all 0.8s ease;
+    transform: translateY(+12px);
+}
+
+.sci ul li:nth-child(1)[data-scroll="in"] 
+{
+ opacity: 1;
+ transform: translateY(0);
+ transition-delay: 0.3s;
+}
+.sci ul li:nth-child(2)[data-scroll="in"] 
+{
+ opacity: 1;
+ transform: translateY(0);
+ transition-delay: 0.5s;
+}
+.sci ul li:nth-child(3)[data-scroll="in"] 
+{
+ opacity: 1;
+ transform: translateY(0);
+ transition-delay: 0.7s;
+}
+
+.sci ul li:nth-child(4)[data-scroll="in"] 
+{
+ opacity: 1;
+ transform: translateY(0);
+ transition-delay: 0.9s;
+}
+
+.sci ul li a{
+ text-decoration: none;
+ display: inline-block;
+ margin: 0 30px;
+ 
+}
+
+.sci ul li a img {
+    filter: invert(1);
+    max-width: 20px;
+}
+
+.sci ul li a:hover img{
+    opacity: 0.5;
+}
+
+.copyright{
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 40px;
+    bottom: 5px;
+}
+
+.copyright span
+{
+    padding-left: 2px;
+    padding-right: 5px;
+}
+
+
+@media (max-width: 992px)
+{
+    
+    .sec
+    {
+        padding: 10px 50px 50px 50px;
+    }
+    .row100
+    {
+        flex-direction: column;
+    }
+    .contactForm .row100 .inputBx50,
+    .contactForm .row100 .inputBx100
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sci{
+        margin: 20px;
+    }
+
+    .sci ul li img{
+        font-size: 24px;
+    }
+
+    .mxw800p h3
+    {
+    font-size: 30px;
+    }
+
+
+
+    .ski ul li a{
+        width: 30px;
+        height: 30px;
+        
+       }
+       
+    
+    .ski ul li a img {
+        max-width:30px;
+    }
+
+    
+.ski ul{
+    grid-gap: 10px;
+}
+
+.contact p
+{
+    font-size: 10px;
+    padding-bottom: 20px;
+}
+
+.mxw800p p
+{
+font-size: 1em;
+}
+
+    
+}
